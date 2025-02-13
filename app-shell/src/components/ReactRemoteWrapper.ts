@@ -28,7 +28,6 @@ export const ReactRemoteWrapper = defineComponent({
         const module = await import("mfe3/remote-app");
         // Assigning the imported component to the RemoteApp ref
         RemoteApp.value = module.default as React.ComponentType;
-        
         // Checking if the container element and the remote component are available
         if (containerRef.value && RemoteApp.value) {
           // Creating a root for the React component
@@ -46,11 +45,7 @@ export const ReactRemoteWrapper = defineComponent({
       // Checking if the containerRef is available
       if (containerRef) {
         // Returning a div element with the containerRef attached
-        return h('div', 
-          { 
-            ref: containerRef
-          }
-        );
+        return h('div', { ref: containerRef });
       }
       // Returning a loading message if the containerRef is not available
       return h("div", "Loading remote component...");
