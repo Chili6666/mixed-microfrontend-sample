@@ -19,8 +19,13 @@
         <router-link to="/mfe3" class="btn">Explore MFE3</router-link>
       </div>
     </div>
+    <react-webcomponent-wrapper></react-webcomponent-wrapper>
   </div>
 </template>
+
+<script setup lang="ts">
+  import '../components/ReactWebComponentWrapper.ts'
+</script>
 
 <style scoped>
 .home {

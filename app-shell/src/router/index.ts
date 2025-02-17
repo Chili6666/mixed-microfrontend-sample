@@ -25,7 +25,7 @@ const router = createRouter({
       path: "/mfe3",
       name: "MFE3",
       //component: () => import("mfe3/remote-app"),
-      component: ReactRemoteWrapper
+      component: ReactRemoteWrapper,
     },
   ],
 });
