@@ -8,7 +8,7 @@ export default defineConfig({
       template: {
         compilerOptions: {
           // All components starting with "inf-" are web components
-          isCustomElement: tag => tag.startsWith('react-webcomponent-'),
+          isCustomElement: tag => tag.startsWith('react-'),
         },
       },
     }),
